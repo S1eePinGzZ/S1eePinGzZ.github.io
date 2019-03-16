@@ -1,21 +1,1015 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>太阳の倾いたこの世界で</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            CSS布局方案 | 
+        
+        太阳の倾いたこの世界で
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="http://poadan2tz.bkt.clouddn.com/-bqqbQ5-jluoZtToS2s-2s.gif">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="-broken chronograph-">
+    <meta name="keywords" content=",CSS">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
   
-  <!-- Import lsloader -->
-  <script>!function(){var e="http://"+location.host+"/combo?combo=";window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}},lsloader.removeLS=function(e){try{localStorage.removeItem(e)}catch(e){}},lsloader.setLS=function(e,t){try{localStorage.setItem(e,t)}catch(e){}},lsloader.getLS=function(e){var t="";try{t=localStorage.getItem(e)}catch(e){t=""}return t},lsloader.load=function(e,t,s){s=s||function(){};var n;if(n=this.getLS(e),!/\/\*codestartv1\*\//.test(n))return this.removeLS(e),void this.requestResource(e,t,s);if(n){var a=n.split("/*codestartv1*/")[0];if(a!=t)return console.log("reload:"+t),this.removeLS(e),void this.requestResource(e,t,s);n=n.split("/*codestartv1*/")[1],/\.js?.+$/.test(a)?(this.jsRunSequence.push({name:e,code:n}),this.runjs(t,e,n)):(document.getElementById(e).appendChild(document.createTextNode(n)),s())}else this.requestResource(e,t,s)},lsloader.requestResource=function(e,t,s){var n=this;/\.js?.+$/.test(t)?this.iojs(t,e,function(e,t,s){n.setLS(t,e+"/*codestartv1*/"+s),n.runjs(e,t,s)}):/\.css?.+$/.test(t)&&this.iocss(t,e,function(s){document.getElementById(e).appendChild(document.createTextNode(s)),n.setLS(e,t+"/*codestartv1*/"+s)},s)},lsloader.iojs=function(e,t,s){var n=this;n.jsRunSequence.push({name:t,code:""});try{var a=new XMLHttpRequest;a.open("get",e,!0),a.onreadystatechange=function(){if(4==a.readyState){if((a.status>=200&&a.status<300||304==a.status)&&""!=a.response)return void s(e,t,a.response);n.jsfallback(e,t)}},a.send(null)}catch(s){n.jsfallback(e,t)}},lsloader.iocss=function(e,t,s,n){var a=this;try{var u=new XMLHttpRequest;u.open("get",e,!0),u.onreadystatechange=function(){if(4==u.readyState){if((u.status>=200&&u.status<300||304==u.status)&&""!=u.response)return s(u.response),void n();a.cssfallback(e,t,n)}},u.send(null)}catch(s){a.cssfallback(e,t,n)}},lsloader.iofonts=function(e,t,s,n){var a=this;try{var u=new XMLHttpRequest;u.open("get",e,!0),u.onreadystatechange=function(){if(4==u.readyState){if((u.status>=200&&u.status<300||304==u.status)&&""!=u.response)return s(u.response),void n();a.cssfallback(e,t,n)}},u.send(null)}catch(s){a.cssfallback(e,t,n)}},lsloader.runjs=function(e,t,s){if(t&&s)for(var n in this.jsRunSequence)this.jsRunSequence[n].name==t&&(this.jsRunSequence[n].code=s);if(this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code)),a.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(a),this.jsRunSequence.shift(),this.jsRunSequence.length>0&&this.runjs()}else if(this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status){var u=this,a=document.createElement("script");a.src=this.jsRunSequence[0].path,a.type="text/javascript",this.jsRunSequence[0].status="loading",a.onload=function(){u.jsRunSequence.shift(),u.jsRunSequence.length>0&&u.runjs()},document.body.appendChild(a)}},lsloader.tagLoad=function(e,t){this.jsRunSequence.push({name:t,code:"",path:e,status:"failed"}),this.runjs()},lsloader.jsfallback=function(e,t){if(!this.jsnamemap[t]){this.jsnamemap[t]=t;for(var s in this.jsRunSequence)this.jsRunSequence[s].name==t&&(this.jsRunSequence[s].code="",this.jsRunSequence[s].status="failed",this.jsRunSequence[s].path=e);this.runjs()}},lsloader.cssfallback=function(e,t,s){if(!this.cssnamemap[t]){this.cssnamemap[t]=1;var n=document.createElement("link");n.type="text/css",n.href=e,n.rel="stylesheet",n.onload=n.onerror=s;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a)}},lsloader.runInlineScript=function(e,t){var s=document.getElementById(t).innerText;this.jsRunSequence.push({name:e,code:s}),this.runjs()},lsloader.loadCombo=function(t){var s="",n={};for(var a in t){var u=this.getLS(t[a].name);if(u)var o=u.split("/*codestartv1*/")[0],c=u.split("/*codestartv1*/")[1];else var o="";o==t[a].path?this.jsRunSequence.push({name:t[a].name,code:c,path:t[a].path}):(this.jsRunSequence.push({name:t[a].name,code:null,path:t[a].path,status:"comboloading"}),n[t[a].name]=!0,s+=(""==s?"":";")+t[a].path)}var i=this;if(s){var r=new XMLHttpRequest;r.open("get",e+s,!0),r.onreadystatechange=function(){if(4==r.readyState)if(r.status>=200&&r.status<300||304==r.status){if(""!=r.response)return void i.runCombo(r.response,n)}else{for(var e in i.jsRunSequence)n[i.jsRunSequence[e].name]&&(i.jsRunSequence[e].status="failed");i.runjs()}},r.send(null)}this.runjs()},lsloader.runCombo=function(e,t){e=e.split("/*combojs*/"),e.shift();for(var s in this.jsRunSequence)t[this.jsRunSequence[s].name]&&e[0]&&(this.jsRunSequence[s].status="comboJS",this.jsRunSequence[s].code=e[0],this.setLS(this.jsRunSequence[s].name,this.jsRunSequence[s].path+"/*codestartv1*/"+e[0]),e.shift());this.runjs()}}();</script>
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #66ccff !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #66ccff !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #66ccff !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(http://poadan2tz.bkt.clouddn.com/toer.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="太阳の倾いたこの世界で">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2019/03/15/CSS布局方案/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="太阳の倾いたこの世界で">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com/2019/03/15/CSS布局方案/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="CSS布局方案 | 太阳の倾いたこの世界で">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="-broken chronograph-">
+    <meta property="og:article:tag" content="CSS"> 
+
+    
+        <meta property="article:published_time" content="Fri Mar 15 2019 01:23:27 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 15 2019 01:26:05 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com/2019/03/15/CSS布局方案/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2019/03/15/CSS布局方案/index.html",
+    "headline": "CSS布局方案",
+    "datePublished": "Fri Mar 15 2019 01:23:27 GMT+0800",
+    "dateModified": "Fri Mar 15 2019 01:26:05 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "S1eePinG",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://poadan2tz.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190313120828.jpg"
+        },
+        "description": "太阳の倾いたこの世界で"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "太阳の倾いたこの世界で",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",CSS",
+    "description": "-broken chronograph-",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
 </head>
-<body>
-  <div id="app"></div>
-  <script type="text/javascript">
-    window.rootUrl = "/"
-    window.one = {"site":{"title":"太阳の倾いたこの世界で","subtitle":"broken chronograph","description":"-broken chronograph-","author":"S1eePinG","language":"zh-CN","timezone":null,"url":"http://yoursite.com","root":"/","permalink":":year/:month/:day/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":false,"line_number":true,"tab_replace":null},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":"one","deploy":{"type":"git","repo":"git@github.com:S1eePinGzZ/S1eePinGzZ.github.io.git","branch":"master"},"ignore":[],"keywords":null,"index_generator":{"per_page":10,"order_by":"-date","path":""},"live2d":{"enable":true,"scriptFrom":"local","pluginRootPath":"node_modules/live2d-widget","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"use":"live2d-widget-model-shizuku","scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"mobile":{"show":false,"scale":0.5},"display":{"superSample":2,"width":130,"height":260,"position":"right","hOffset":0,"vOffset":-20},"react":{"opacityDefault":0.9,"opacityOnHover":0.9}},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"tag_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true}},"theme":{"title":"太阳の倾いたこの世界で","subtitle":"broken chronograph","description":"-broken chronograph-","author":"S1eePinG","language":"zh-CN","timezone":null,"url":"http://yoursite.com","root":"/","permalink":":year/:month/:day/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":false,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":false,"line_number":true,"tab_replace":null},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":"one","deploy":{"type":"git","repo":"git@github.com:S1eePinGzZ/S1eePinGzZ.github.io.git","branch":"master"},"ignore":[],"keywords":null,"index_generator":{"per_page":10,"order_by":"-date","path":""},"live2d":{"enable":true,"scriptFrom":"local","pluginRootPath":"node_modules/live2d-widget","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"use":"live2d-widget-model-shizuku","scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"mobile":{"show":false,"scale":0.5},"display":{"superSample":2,"width":130,"height":260,"position":"right","hOffset":0,"vOffset":-20},"react":{"opacityDefault":0.9,"opacityOnHover":0.9}},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"tag_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"server":{"port":4000,"log":false,"ip":"0.0.0.0","compress":false,"header":true},"head":{"favicon":"http://poadan2tz.bkt.clouddn.com/-bqqbQ5-jluoZtToS2s-2s.gif"},"img":{"avatar":"http://poadan2tz.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190313120828.jpg","left_pic":["http://poadan2tz.bkt.clouddn.com/66474729_p0.jpg"],"right_pic":["http://poadan2tz.bkt.clouddn.com/68252914_p0.png"],"post_thumbnail":[""],"drawerHeaderBg":["http://poadan2tz.bkt.clouddn.com/64019196_p0.png"]},"uiux":{"slogan":"-七牛链接挂了...最近会重新配置一遍-","defaultPrimaryColor":"blue","defaultAccentColor":"red"},"comment":{"disqus":{"shortName":"xxx"}},"Drawer":[{"title":"首页","type":"sitelink","href":"/","icon":"home"},{"title":"hr","type":"hr"},{"title":"关于我","type":"page","name":"关于我","icon":"account_circle"},{"title":"搜索","type":"sitelink","href":"/search/","icon":"search"},{"title":"联系我","icon":"contact_phone","nested":[{"title":"Email","type":"link","href":null,"icon":"mail_outline"},{"title":"Github","type":"link","href":"https://github.com/S1eePinGzZ","icon":{"type":"svg","date":"<path d=\"M941.714 512q0 143.433-83.712 258.011t-216.283 158.574q-15.433 2.853-22.565-3.986t-7.131-17.152v-120.576q0-55.442-29.696-81.152 32.585-3.438 58.587-10.277t53.723-22.272 46.299-37.998 30.281-60.014 11.703-86.016q0-69.157-45.129-117.723 21.138-52.005-4.571-116.553-16.018-5.157-46.299 6.29t-52.553 25.161l-21.723 13.714q-53.138-14.848-109.714-14.848t-109.714 14.848q-9.143-6.29-24.283-15.433t-47.726-22.016-49.152-7.717q-25.161 64.585-3.986 116.553-45.129 48.567-45.129 117.723 0 48.567 11.703 85.723t29.989 60.014 46.007 38.29 53.723 22.272 58.587 10.277q-22.857 20.553-28.014 58.843-11.995 5.705-25.71 8.558t-32.585 2.853-37.413-12.288-31.707-35.73q-10.862-18.286-27.721-29.696t-28.27-13.714l-11.447-1.719q-11.995 0-16.567 2.56t-2.853 6.583 5.157 8.009 7.424 6.839l3.986 2.853q12.581 5.705 24.869 21.723t17.993 29.147l5.705 13.129q7.424 21.723 25.161 35.145t38.29 17.152 39.717 3.986 31.707-2.011l13.129-2.304q0 21.723 0.293 50.871t0.293 30.866q0 10.277-7.424 17.152t-22.857 3.986q-132.571-43.995-216.283-158.574t-83.712-258.011q0-119.442 58.843-220.27t159.707-159.707 220.27-58.843 220.27 58.843 159.707 159.707 58.843 220.27z\" p-id=\"997\"></path>","viewBox":"0 0 1024 1024"}},{"title":"QQ","type":"link","href":null,"icon":{"type":"svg","style":{"height":"20px","width":"20px","margin":"14px"},"date":"<path d=\"M971.464704 668.658688 968.998912 651.020288 965.843968 633.814016 963.337216 624.9728 960.917504 615.569408 957.71648 606.598144 954.430464 596.612096 950.668288 587.208704 946.562048 577.545216 939.254784 561.765376 932.769792 547.8656 926.285824 535.437312 920.62208 523.848704 914.138112 513.301504 909.382656 503.616512 899.309568 489.15456 886.64064 469.894144 883.70176 465.138688 882.707456 463.107072 882.707456 461.50656 884.825088 455.000064 887.763968 449.207296 890.314752 437.772288 891.742208 431.869952 891.742208 425.77408 892.478464 420.867072 892.478464 415.93856 891.742208 410.27584 890.92096 405.649408 889.061376 396.26752 886.64064 387.145728 884.435968 378.779648 880.97792 370.651136 877.08672 363.864064 874.015744 357.487616 870.601728 351.413248 865.240064 342.463488 863.25248 339.28704 862.646272 336.520192 860.182528 319.161344 858.58304 307.725312 856.767488 293.567488 853.957632 278.93248 849.547264 262.158336 847.040512 252.754944 845.049856 244.799488 842.284032 235.547648 839.171072 225.712128 836.058112 216.590336 832.079872 206.77632 823.953408 187.817984 819.15392 178.84672 813.359104 168.557568 807.913472 159.73888 802.465792 149.751808 794.769408 140.498944 788.286464 131.52768 780.374016 122.27584 772.332544 113.88928 764.203008 105.783296 754.562048 97.373184 749.504512 94.348288 744.706048 90.153984 734.329856 82.783232 722.312192 74.806272 710.032384 67.586048 697.365504 61.079552 683.531264 55.135232 670.560256 49.492992 657.027072 44.56448 642.24256 40.521728 628.7104 36.912128 614.31296 33.75616 600.694784 30.427136 585.996288 28.827648 571.597824 27.076608 557.246464 25.19552 542.416896 25.19552 528.106496 25.19552 514.271232 25.19552 499.70176 26.039296 486.040576 27.940864 472.421376 29.821952 458.587136 32.135168 444.88192 34.750464 431.911936 37.927936 418.941952 42.121216 406.880256 46.31552 394.81856 50.357248 382.712832 56.301568 371.299328 61.079552 361.182208 66.873344 350.63296 73.37984 340.90496 80.167936 331.308032 87.819264 323.396608 94.930944 310.9888 106.626048 300.698624 117.49888 290.8416 128.048128 281.8048 138.770432 273.332224 149.751808 265.895936 160.451584 258.676736 171.15136 255.304704 175.929344 252.191744 181.722112 245.446656 191.860736 240.086016 201.977856 235.33056 211.530752 231.179264 221.648896 227.115008 230.899712 223.742976 239.5904 220.63104 248.841216 217.474048 257.380352 213.279744 272.858112 210.210816 287.753216 208.525312 300.203008 206.795776 310.925312 206.795776 319.161344 206.795776 325.818368 206.795776 331.741184 203.855872 334.941184 201.17504 339.28704 199.057408 343.177216 197.240832 347.370496 194.950144 356.493312 192.442368 364.880896 191.62112 372.381696 191.058944 377.893888 191.058944 383.816704 185.265152 392.225792 181.157888 400.613376 178.045952 408.697856 175.75424 415.93856 173.98272 422.878208 172.296192 429.405184 172.296192 434.875392 172.296192 440.971264 172.296192 446.0288 173.290496 450.071552 174.716928 457.464832 176.489472 463.107072 173.290496 465.570816 164.210688 472.358912 152.236032 483.339264 144.88576 489.846784 137.709568 496.223232 132.781056 501.303296 128.7168 505.778176 119.983104 515.180544 111.68256 524.583936 105.197568 532.690944 97.415168 544.407552 89.979904 554.954752 82.629632 566.693888 76.447744 577.545216 71.303168 589.089792 65.855488 599.810048 61.877248 610.36032 57.683968 621.362176 54.571008 632.061952 51.501056 643.064832 48.77824 652.619776 47.263744 662.888448 45.57824 672.421888 44.150784 681.695232 43.287552 699.766784 43.287552 716.540928 43.287552 724.063232 44.150784 731.456512 46.44352 744.0384 47.263744 749.572096 48.77824 755.190784 50.6368 760.510464 52.366336 764.269568 55.133184 771.23072 57.25184 772.658176 58.548224 775.597056 60.191744 776.288256 61.186048 776.288256 61.877248 776.288256 69.097472 775.597056 76.447744 773.696512 82.629632 771.23072 89.114624 767.03744 95.03744 763.14624 100.39808 758.044672 106.191872 752.72704 111.077376 747.235328 115.745792 741.010432 119.983104 735.388672 123.961344 730.722304 126.425088 725.36064 131.267584 716.540928 132.781056 712.930304 133.645312 710.769664 134.076416 708.304896 135.201792 706.27328 136.066048 705.841152 137.709568 704.974848 138.74688 704.974848 139.179008 705.841152 140.000256 705.841152 140.822528 706.27328 143.545344 718.270464 146.485248 727.955456 150.419456 738.11456 154.396672 747.235328 157.72672 756.31616 162.871296 764.269568 166.631424 772.658176 170.86976 780.352512 175.75424 787.009536 179.472384 793.409536 189.329408 805.254144 197.933056 815.804416 206.2336 824.018944 214.40512 831.412224 221.495296 837.204992 232.044544 846.58688 236.281856 848.661504 237.707264 850.650112 237.707264 851.644416 236.713984 852.552704 236.281856 852.552704 234.1632 853.244928 226.250752 853.850112 218.901504 854.844416 212.718592 855.709696 206.2336 857.135104 200.569856 858.907648 194.950144 860.637184 190.021632 863.275008 186.131456 865.696768 181.157888 867.296256 178.045952 869.890048 174.716928 871.921664 171.127808 874.816512 166.631424 880.438272 164.94592 883.076096 162.871296 885.366784 160.017408 891.290624 158.461952 896.22016 156.601344 901.146624 156.212224 905.470976 156.212224 911.133696 156.212224 913.598464 155.390976 917.618688 155.390976 921.726976 154.396672 925.7472 154.396672 929.33632 155.390976 933.269504 156.212224 936.77056 158.461952 943.516672 160.017408 946.715648 162.006016 949.9136 164.210688 953.069568 166.631424 955.838464 169.875456 958.993408 172.296192 961.5872 179.472384 966.948864 186.692608 971.444224 194.950144 975.50848 203.855872 979.139584 213.279744 983.02976 223.742976 985.452544 234.1632 988.9536 245.446656 991.289344 256.688128 992.974848 268.273664 994.748416 280.249344 996.477952 303.855616 998.940672 328.195072 999.3728 350.63296 999.3728 361.182208 999.3728 371.299328 999.3728 381.847552 998.940672 390.884352 997.905408 399.617024 997.213184 407.788544 996.477952 420.931584 993.883136 430.398464 991.289344 439.392256 988.9536 455.993344 981.994496 463.516672 979.139584 470.69184 975.50848 482.53952 968.85248 493.216768 963.489792 501.129216 958.43328 506.921984 953.069568 515.95776 954.063872 522.96192 954.843136 536.79616 955.838464 543.281152 955.838464 548.770816 955.838464 552.96512 956.70272 557.246464 958.43328 564.033536 960.893952 571.597824 963.489792 585.996288 967.986176 600.694784 973.345792 615.005184 977.496064 629.445632 980.438016 644.187136 984.155136 659.448832 986.359808 673.931264 987.959296 688.458752 989.990912 702.03392 991.289344 716.560384 992.108544 730.481664 992.108544 744.013824 992.108544 756.854784 992.108544 769.823744 990.554112 782.534656 989.990912 794.769408 987.959296 806.052864 985.452544 817.337344 983.02976 828.147712 980.438016 832.641024 979.139584 837.6576 977.496064 847.040512 973.778944 855.384064 969.887744 863.25248 965.823488 870.601728 961.5872 877.08672 956.70272 879.637504 954.063872 882.707456 950.4768 886.64064 945.677312 890.92096 939.754496 892.478464 936.77056 893.169664 934.264832 894.984192 931.064832 895.676416 927.60576 895.676416 924.275712 896.54272 920.947712 895.676416 916.063232 894.984192 911.868928 893.169664 906.940416 891.742208 902.87616 889.061376 897.946624 885.820416 893.452288 882.707456 889.561088 878.513152 886.275072 869.866496 878.751744 860.182528 871.488512 850.41152 865.696768 840.121344 859.772928 816.603136 848.186368 810.9824 844.727296 809.426944 843.127808 808.430592 842.090496 819.759104 830.675968 824.644608 825.056256 828.70784 819.867648 836.619264 808.411136 844.09856 796.694528 850.41152 786.275328 856.377344 776.288256 864.375808 756.31616 870.601728 739.714048 874.707968 727.955456 877.08672 724.063232 878.513152 720.907264 880.97792 719.004672 882.015232 719.004672 882.707456 719.438848 888.759296 731.456512 894.163968 743.042048 897.968128 749.572096 901.901312 755.190784 905.793536 762.107904 910.808064 768.941056 915.001344 773.696512 917.552128 776.288256 920.059904 778.625024 922.351616 780.352512 924.557312 781.953024 929.398784 784.417792 931.90656 785.282048 933.593088 785.282048 935.839744 785.282048 938.391552 784.417792 941.548544 782.81728 945.050624 781.216768 947.945472 778.625024 950.668288 775.597056 953.73824 771.835904 956.158976 768.941056 958.88384 764.269568 960.917504 760.510464 963.337216 755.190784 964.6336 750.695424 968.136704 739.714048 970.426368 727.565312 972.068864 714.097664 973.193216 706.27328 973.193216 699.766784 973.193216 692.805632 973.193216 684.288Z\" p-id=\"996\"></path>","viewBox":"0 0 1024 1024"}}]}],"colorPicker":true,"homeToolBar":[{"icon":"more_vert","items":[{"title":"RSS","type":"link","href":"/atom.xml","icon":"rss_feed"}]}],"footer":["",["-broken chronograph-","-late autumn night`s dream-","-starry road to tomorrow-","-dice in pot-","-from dawn till dusk-","-no news was good news-","-home,sweet home-","-slight light,slight hope-","-moonlit sorcery-","-my happiness-","-evidence of existance-","-CHTHOLLY-"]]}}
-  </script>
-  <script>lsloader.load("vendor.js","/vendor.js")</script>
-  <script>lsloader.load("bundle.js","/bundle.js")</script>
-<script src="/node_modules/live2d-widgetlib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"node_modules/live2d-widget","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/node_modules/live2d-widgetassets/shizuku.model.json"},"mobile":{"show":false,"scale":0.5},"display":{"superSample":2,"width":130,"height":260,"position":"right","hOffset":0,"vOffset":-20},"react":{"opacityDefault":0.9,"opacityOnHover":0.9}});</script></body>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS布局方案"><span class="post-toc-number">1.</span> <span class="post-toc-text">CSS布局方案</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#居中布局"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">居中布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#水平居中"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">水平居中</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#inline-block-text-align"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">inline-block + text-align</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#table-margin"><span class="post-toc-number">1.1.1.2.</span> <span class="post-toc-text">table + margin</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#absolute-transform"><span class="post-toc-number">1.1.1.3.</span> <span class="post-toc-text">absolute + transform</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-margin"><span class="post-toc-number">1.1.1.4.</span> <span class="post-toc-text">flex + margin</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-justify-content"><span class="post-toc-number">1.1.1.5.</span> <span class="post-toc-text">flex + justify-content</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#垂直布局"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">垂直布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#table-cell-vertical-align"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">table-cell + vertical-align</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#absolute-transform-1"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">absolute + transform</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-align-items"><span class="post-toc-number">1.1.2.3.</span> <span class="post-toc-text">flex + align-items</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#水平垂直居中"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">水平垂直居中</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#absolute-transform-2"><span class="post-toc-number">1.1.3.1.</span> <span class="post-toc-text">absolute + transform</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#inline-block-text-align-table-cell-vertical-align"><span class="post-toc-number">1.1.3.2.</span> <span class="post-toc-text">inline-block + text-align + table-cell + vertical-align</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-justify-content-align-items"><span class="post-toc-number">1.1.3.3.</span> <span class="post-toc-text">flex + justify-content + align-items</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多列布局"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">多列布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#定宽-自适应"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">定宽+自适应</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#float-overflow"><span class="post-toc-number">1.2.1.1.</span> <span class="post-toc-text">float + overflow</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#float-margin"><span class="post-toc-number">1.2.1.2.</span> <span class="post-toc-text">float + margin</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#table"><span class="post-toc-number">1.2.1.3.</span> <span class="post-toc-text">table</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex"><span class="post-toc-number">1.2.1.4.</span> <span class="post-toc-text">flex</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#两列定宽-一列自适应"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">两列定宽 + 一列自适应</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#不定宽-自适应"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">不定宽 + 自适应</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#float-overflow-1"><span class="post-toc-number">1.2.3.1.</span> <span class="post-toc-text">float + overflow</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#table-1"><span class="post-toc-number">1.2.3.2.</span> <span class="post-toc-text">table</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-1"><span class="post-toc-number">1.2.3.3.</span> <span class="post-toc-text">flex</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#两列不定宽-一列自适应"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">两列不定宽 + 一列自适应</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#等分布局"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">等分布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#float"><span class="post-toc-number">1.2.5.1.</span> <span class="post-toc-text">float</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#table-2"><span class="post-toc-number">1.2.5.2.</span> <span class="post-toc-text">table</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-2"><span class="post-toc-number">1.2.5.3.</span> <span class="post-toc-text">flex</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#定宽-自适应-两块高度一样高"><span class="post-toc-number">1.2.6.</span> <span class="post-toc-text">定宽 + 自适应 + 两块高度一样高</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#float-1"><span class="post-toc-number">1.2.6.1.</span> <span class="post-toc-text">float</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#table-3"><span class="post-toc-number">1.2.6.2.</span> <span class="post-toc-text">table</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-3"><span class="post-toc-number">1.2.6.3.</span> <span class="post-toc-text">flex</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#display"><span class="post-toc-number">1.2.6.4.</span> <span class="post-toc-text">display</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#全屏布局"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">全屏布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#特点"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">特点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#全屏布局的方法"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">全屏布局的方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#position"><span class="post-toc-number">1.3.2.1.</span> <span class="post-toc-text">position</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-4"><span class="post-toc-number">1.3.2.2.</span> <span class="post-toc-text">flex</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#全部自适应布局"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">全部自适应布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#flex-5"><span class="post-toc-number">1.3.3.1.</span> <span class="post-toc-text">flex</span></a></li></ol></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://poadan2tz.bkt.clouddn.com/68208926_p0.jpg)">
+    
+            <p class="article-headline-p">
+                CSS布局方案
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://poadan2tz.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190313120828.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>S1eePinG</strong>
+        <span>3月 15, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/CSS/">CSS</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=CSS布局方案&url=http://yoursite.com/2019/03/15/CSS布局方案/index.html&pic=http://yoursite.comhttp://poadan2tz.bkt.clouddn.com/-bqqbQ5-jluoZtToS2s-2s.gif&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=CSS布局方案&url=http://yoursite.com/2019/03/15/CSS布局方案/index.html&via=S1eePinG" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/03/15/CSS布局方案/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/03/15/CSS布局方案/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="CSS布局方案"><a href="#CSS布局方案" class="headerlink" title="CSS布局方案"></a>CSS布局方案</h1><h2 id="居中布局"><a href="#居中布局" class="headerlink" title="居中布局"></a>居中布局</h2><h3 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h3><h4 id="inline-block-text-align"><a href="#inline-block-text-align" class="headerlink" title="inline-block + text-align"></a>inline-block + text-align</h4><p>将子盒子由块级元素转变为行内元素，再通过text-align:center达到水平居中</p>
+<p>对子盒子设置display:inline-block,父级元素设置text-align:center</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.outer&#123;</span><br><span class="line">  text-align:center;</span><br><span class="line">&#125;</span><br><span class="line">.iner&#123;</span><br><span class="line">  display:inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>兼容ie6/7，可是子元素的文字也会居中，在子元素设置text-align:left解决</p>
+<h4 id="table-margin"><a href="#table-margin" class="headerlink" title="table + margin"></a>table + margin</h4><p>设置子元素为块级元素，使用margin: 0 auto实现水平居中</p>
+<p>子元素设置display:table,margin: 0 auto</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.iner&#123;</span><br><span class="line">  display:table;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>设置简单，但是不支持ie8以下，因为ie6/7无法转换div为table</p>
+<h4 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h4><p>将子元素设置为绝对定位，移动子元素，使子元素左侧距离相对框左侧边框的距离为相对元素宽度的一半，再通过向左移动子元素的一半宽度以达到水平居中。当然，在此之前，我们需要设置父元素为相对定位，使父元素成为子元素的相对元素</p>
+<p>对父框设置position:relative，对子框设置position:absolute，left:50%，transform:translateX(-50%)</p>
+<p>HTML<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">position:relative;</span><br><span class="line">&#125;</span><br><span class="line">.iner &#123;</span><br><span class="line">position:absolute;</span><br><span class="line">left:50%;</span><br><span class="line">transform:translateX(-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>居中的元素不会对其他元素产生影响，因为是绝对定位，然而会有兼容性问题(CSS3，需要添加浏览器前缀)</p>
+<h4 id="flex-margin"><a href="#flex-margin" class="headerlink" title="flex + margin"></a>flex + margin</h4><p>通过flex布局将子元素转换为flex item，再设置子元素居中以达到居中</p>
+<p>先将父元素设置为display:flex，再设置子元素margin:0 auto。</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">display:flex;</span><br><span class="line">&#125;</span><br><span class="line">.iner &#123;</span><br><span class="line">margin: 0 auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>兼容性差，ie8以下不支持(包括ie8)</p>
+<h4 id="flex-justify-content"><a href="#flex-justify-content" class="headerlink" title="flex + justify-content"></a>flex + justify-content</h4><p>通过flex布局的justify-content属性达到水平居中</p>
+<p>设置父元素display:flex,justify-content:center</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    justify-content:center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>只用给父元素设置样式，ie6、7、8依旧不支持</p>
+<h3 id="垂直布局"><a href="#垂直布局" class="headerlink" title="垂直布局"></a>垂直布局</h3><h4 id="table-cell-vertical-align"><a href="#table-cell-vertical-align" class="headerlink" title="table-cell + vertical-align"></a>table-cell + vertical-align</h4><p>通过将父元素转化为一个表格单元格显示（类似 <td> 和 <th>），再通过设置属性，使表格单元格内容垂直居中以达到垂直居中</th></td></p>
+<p>先将父元素设置为display:table-cell，再设置vertical-align:middle</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">  height:400px;</span><br><span class="line">  display:table-cell;     /*display:table-cell使子元素成为表格单元格*/</span><br><span class="line">  vertical-align:middle;      /*设置垂直居中*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ie8以上都支持</p>
+<h4 id="absolute-transform-1"><a href="#absolute-transform-1" class="headerlink" title="absolute + transform"></a>absolute + transform</h4><p>类似于水平居中，先将父元素设置为position:relative，再设置子元素position:absolute，top:50%，transform:translateY(-50%)</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    height:400px;</span><br><span class="line">    position:relative;</span><br><span class="line">&#125;</span><br><span class="line">.iner &#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    top:50%;</span><br><span class="line">    transform:translateY(-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>居中元素不会对其他元素产生影响（absolute）,CSS3需要添加浏览器前缀</p>
+<h4 id="flex-align-items"><a href="#flex-align-items" class="headerlink" title="flex + align-items"></a>flex + align-items</h4><p>通过flex布局的align-times属性达到垂直居中<br>先将父元素设置为position:flex，再设置align-items:center</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    height:400px;</span><br><span class="line">    display:flex;</span><br><span class="line">    align-items:center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>只用设置父元素的css，但是兼容性较差</p>
+<h3 id="水平垂直居中"><a href="#水平垂直居中" class="headerlink" title="水平垂直居中"></a>水平垂直居中</h3><h4 id="absolute-transform-2"><a href="#absolute-transform-2" class="headerlink" title="absolute + transform"></a>absolute + transform</h4><p>将水平居中时的absolute + transform和垂直居中时的absolute + transform相结合</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    height:400px;</span><br><span class="line">    position:relative;</span><br><span class="line">&#125;</span><br><span class="line">.iner &#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    left:50%;</span><br><span class="line">    top:50%;</span><br><span class="line">    transform:tranplate(-50%,-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>居中元素不会对其他元素产生影响，兼容性存在问题</p>
+<h4 id="inline-block-text-align-table-cell-vertical-align"><a href="#inline-block-text-align-table-cell-vertical-align" class="headerlink" title="inline-block + text-align + table-cell + vertical-align"></a>inline-block + text-align + table-cell + vertical-align</h4><p>使用inline-block + text-align水平居中，再用table-cell + vertical-align垂直居中，将二者结合起来</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    width:600px;</span><br><span class="line">    height:400px;</span><br><span class="line">    text-align:center;</span><br><span class="line">    display:table-cell;</span><br><span class="line">    vertical-align:middle;</span><br><span class="line">&#125;</span><br><span class="line">.iner &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>兼容性较好</p>
+<h4 id="flex-justify-content-align-items"><a href="#flex-justify-content-align-items" class="headerlink" title="flex + justify-content + align-items"></a>flex + justify-content + align-items</h4><p>使用flex布局中的justify-content（水平）和align-items（垂直）属性</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&apos;outer&apos;&gt;</span><br><span class="line">  &lt;div class=&apos;iner&apos;&gt;this&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    height:400px;</span><br><span class="line">    display:flex;</span><br><span class="line">    justify-content:center;</span><br><span class="line">    align-items:center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h2><h3 id="定宽-自适应"><a href="#定宽-自适应" class="headerlink" title="定宽+自适应"></a>定宽+自适应</h3><h4 id="float-overflow"><a href="#float-overflow" class="headerlink" title="float + overflow"></a>float + overflow</h4><p>通过将左边元素脱离文本流，设置右边元素规定当内容溢出元素框时发生的事情以达到多列布局</p>
+<p>先将左元素设置为float:left、width、margin-left，再设置实际的右元素overflow:hidden</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">    &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">    &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.left &#123;</span><br><span class="line">    float:left;</span><br><span class="line">    background-color:red;</span><br><span class="line">    width:100px;</span><br><span class="line">    margin-right:20px;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    background-color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>不支持ie6</p>
+<h4 id="float-margin"><a href="#float-margin" class="headerlink" title="float + margin"></a>float + margin</h4><p>通过将左元素脱离文本流，加上右元素向右移动一定的距离，向右框添加一个父框，再加上设置左、右父框属性使之产生BFC，以达到视觉上的多列布局</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">    &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;rigth-box&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">      &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">      &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.left &#123;</span><br><span class="line">  background-color:red;</span><br><span class="line">  float:left;</span><br><span class="line">  width:100px;</span><br><span class="line">  position:relative;</span><br><span class="line">&#125;</span><br><span class="line">.right-box &#123;</span><br><span class="line">  float:right;</span><br><span class="line">  width:100%;</span><br><span class="line">  margin-left:-100px;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">  background-color:blue;</span><br><span class="line">  margin-left:100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="table"><a href="#table" class="headerlink" title="table"></a>table</h4><p>通过将父元素设置为表格，将左右元素转化为类似于同一行的td，从而达到多列布局<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">    &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">    &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.left &#123;</span><br><span class="line">  background-color:red;</span><br><span class="line">  width:100px;</span><br><span class="line">&#125;</span><br><span class="line">.outer &#123;</span><br><span class="line">  display:table;</span><br><span class="line">  width:100%;</span><br><span class="line">  table-layout:fixed;</span><br><span class="line">&#125;</span><br><span class="line">.right,.left &#123;</span><br><span class="line">  display:table-cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h4><p>通过flex中的flex属性以达到多列布局<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">    &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">    &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    display:flex;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width:100px;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    flex:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>存在兼容性和性能问题</p>
+<h3 id="两列定宽-一列自适应"><a href="#两列定宽-一列自适应" class="headerlink" title="两列定宽 + 一列自适应"></a>两列定宽 + 一列自适应</h3><p>先将左、中元素设置为float:left、width、margin-right，再设置右框overflow:hidden</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;center&quot;&gt;</span><br><span class="line">        &lt;p&gt;center&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="不定宽-自适应"><a href="#不定宽-自适应" class="headerlink" title="不定宽 + 自适应"></a>不定宽 + 自适应</h3><h4 id="float-overflow-1"><a href="#float-overflow-1" class="headerlink" title="float + overflow"></a>float + overflow</h4><p>将左元素设置为float:left，再设置右元素overflow: hidden，最后设置左元素中的内容width<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.outer&#123;</span><br><span class="line">  display: table; width: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.left,.right&#123;</span><br><span class="line">  display: table-cell;</span><br><span class="line">&#125;</span><br><span class="line">.left&#123;</span><br><span class="line">  width: 0.1%;  /*不设宽度，宽度跟着内容走。比如：.left p&#123;width:200px&#125;*/</span><br><span class="line">  - adding-right: 20px;</span><br><span class="line">&#125;</span><br><span class="line">.left p&#123;</span><br><span class="line">  width:200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ie6下兼容性存在一定问题</p>
+<h4 id="table-1"><a href="#table-1" class="headerlink" title="table"></a>table</h4><p>通过将父框改变为表格，将左右元素转换为类似于同一行的td以达到多列布局，设置父元素宽度100%，给左元素子元素一个固定宽度从而达到自适应</p>
+<p>先将父元素设置为display: table、width: 100%，再设置左、右元素display: table-cell，最后设置左元素width: 0.1%、padding-right以及左元素中的内容width</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">.outer&#123;</span><br><span class="line">    display: table;</span><br><span class="line">    width: 100%;</span><br><span class="line">    &#125;</span><br><span class="line">.left,.right&#123;</span><br><span class="line">    display: table-cell;</span><br><span class="line">&#125;</span><br><span class="line">.left&#123;</span><br><span class="line">    width: 0.1%;</span><br><span class="line">    padding-right: 20px;</span><br><span class="line">&#125;</span><br><span class="line">.left p&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ie6/7不支持</p>
+<h4 id="flex-1"><a href="#flex-1" class="headerlink" title="flex"></a>flex</h4><p>通过flex布局中的flex属性以达到多列布局，加上给左元素中的内容定宽、给右元素设置flex达到不定款+自适应<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    display:flex;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    margin-right:20px;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    flex:1;</span><br><span class="line">&#125;</span><br><span class="line">.left p&#123;</span><br><span class="line">    width: 200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>兼容性存在一定问题，性能存在一定问题</p>
+<h3 id="两列不定宽-一列自适应"><a href="#两列不定宽-一列自适应" class="headerlink" title="两列不定宽 + 一列自适应"></a>两列不定宽 + 一列自适应</h3><p>先将左、中元素设置为float:left、margin-right，再设置右元素overflow:hidden，最后给左中元素中的内容设置width<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;center&quot;&gt;</span><br><span class="line">        &lt;p&gt;center&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.left,.center&#123;</span><br><span class="line">    float: left;</span><br><span class="line">    margin-right: 20px;</span><br><span class="line">&#125;</span><br><span class="line">.right&#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line">.left p,.center p&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="等分布局"><a href="#等分布局" class="headerlink" title="等分布局"></a>等分布局</h3><p>设父元素总长度为l，子元素宽度为w，边距为g，个数为n</p>
+<p>l = w <em> n + g </em> (n-1) -&gt; l = w <em> n + g </em> n - g -&gt; l + g = （w + g） * n</p>
+<ul>
+<li>如何让总宽度增加g(即：L+g)</li>
+<li>如何让每个宽包含g（即：w+g）</li>
+</ul>
+<h4 id="float"><a href="#float" class="headerlink" title="float"></a>float</h4><p>增大父元素的实际宽度后，使用CSS3属性box-sizing进行布局的辅助</p>
+<p>先将父框设置为margin-left: -*px（扩大父元素），再设置子框float: left、width: 25%、padding-left、box-sizing: border-box（使子元素包含边距）</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;1&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;2&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.outer&#123;</span><br><span class="line">  margin-left: -20px;   /*l增加g*/</span><br><span class="line">&#125;</span><br><span class="line">.iner&#123;</span><br><span class="line">  float: left;</span><br><span class="line">  width: 25%;</span><br><span class="line">  padding-left: 20px;</span><br><span class="line">  box-sizing: border-box;     /*包含padding区域 w+g*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ie6 ie7百分比兼容存在一定问题</p>
+<h4 id="table-2"><a href="#table-2" class="headerlink" title="table"></a>table</h4><p>通过增加一个父元素的修正框，增大其宽度，并将父元素转换为table，将子元素转换为tabel-cell进行布局</p>
+<p>先将父元素的修正元素设置为margin-left: -*px，再设置父元素display: table、width:100%、table-layout: fixed（列宽由表格宽度和列宽度设定），设置子元素display: table-cell、padding-left</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer-box&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;1&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;2&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.outer-box&#123;</span><br><span class="line">    margin-left: -20px;       /*l增加g*/</span><br><span class="line">&#125;</span><br><span class="line">.outer&#123;</span><br><span class="line">    display: table;</span><br><span class="line">    width:100%;</span><br><span class="line">    table-layout: fixed;</span><br><span class="line">&#125;</span><br><span class="line">.iner&#123;</span><br><span class="line">    display: table-cell;</span><br><span class="line">    padding-left: 20px;     /*包含padding区域 w+g*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>结构和块数无关联，增加了一层div</p>
+<h4 id="flex-2"><a href="#flex-2" class="headerlink" title="flex"></a>flex</h4><p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;1&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;2&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;iner&quot;&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.outer&#123;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br><span class="line">.iner&#123;</span><br><span class="line">    flex: 1;</span><br><span class="line">&#125;</span><br><span class="line">.iner+.iner&#123;        /*选择相邻兄弟*/   </span><br><span class="line">    margin-left:20px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>代码量少，与块数无关，兼容性差</p>
+<h3 id="定宽-自适应-两块高度一样高"><a href="#定宽-自适应-两块高度一样高" class="headerlink" title="定宽 + 自适应 + 两块高度一样高"></a>定宽 + 自适应 + 两块高度一样高</h3><h4 id="float-1"><a href="#float-1" class="headerlink" title="float"></a>float</h4><p>通过过分加大左右子元素的高度，辅助超出隐藏，以达到视觉上的等高</p>
+<p>将父元素设置overflow: hidden，再设置左右子元素padding-bottom: 9999px、margin-bottom: -9999px，最后设置左元素float: left、width、margin-right，右元素overflow: hidden。<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">p&#123;</span><br><span class="line">    background: none!important;</span><br><span class="line">&#125;</span><br><span class="line">.left,.right&#123;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.outer&#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line">.left,.right&#123;</span><br><span class="line">    padding-bottom: 9999px;</span><br><span class="line">    margin-bottom: -9999px;</span><br><span class="line">&#125;</span><br><span class="line">.left&#123;</span><br><span class="line">    float: left;</span><br><span class="line">    width: 100px;</span><br><span class="line">    margin-right: 20px;</span><br><span class="line">&#125;</span><br><span class="line">.right&#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>伪等高，不是真正意义上的等高</p>
+<h4 id="table-3"><a href="#table-3" class="headerlink" title="table"></a>table</h4><p>将父元素转化为tabel，将子元素转化为tabel-cell布局，以达到定宽+自适应+两块高度一样高</p>
+<p>先将父元素设置为display:table、width:100%、table-layout:fixed，再设置左右元素为display:table-cell，最后设置左元素width、padding-right<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    display:table;</span><br><span class="line">    width:100%;</span><br><span class="line">    table-layout:fixed;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width:100px;</span><br><span class="line">    padding-right:20px;</span><br><span class="line">&#125;</span><br><span class="line">.right,.left &#123;</span><br><span class="line">    display:table-cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="flex-3"><a href="#flex-3" class="headerlink" title="flex"></a>flex</h4><p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    display:flex;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width:100px;</span><br><span class="line">    margin-right:20px;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    flex:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>flex兼容性较差</p>
+<h4 id="display"><a href="#display" class="headerlink" title="display"></a>display</h4><p>通过设置display中的CSS3的-webkit-box属性以达到定宽+自适应+两块高度一样高</p>
+<p>将父元素设置为display: -webkit-box、width: 100%，再设置左元素width、margin-right，最后设置右元素-webkit-box-flex: 1。</p>
+<p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;</span><br><span class="line">        &lt;p&gt;left&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;right&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.outer &#123;</span><br><span class="line">    width: 100%;</span><br><span class="line">    display: -webkit-box;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width:100px;</span><br><span class="line">    margin-right: 20px;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    -webkit-box-flex: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>兼容性有较大问题</p>
+<h2 id="全屏布局"><a href="#全屏布局" class="headerlink" title="全屏布局"></a>全屏布局</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>滚动条不是全局滚动条，而是出现在内容区域里，往往是主内容区域</li>
+<li>浏览器变大时，撑满窗口<h3 id="全屏布局的方法"><a href="#全屏布局的方法" class="headerlink" title="全屏布局的方法"></a>全屏布局的方法</h3></li>
+</ul>
+<h4 id="position"><a href="#position" class="headerlink" title="position"></a>position</h4><p>将上下部分固定，中间部分使用定宽+自适应+两块高度一样高<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;top&quot;&gt;top&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;inner&quot;&gt;right&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;bottom&quot;&gt;bottom&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">html,body,.outer&#123;</span><br><span class="line">    margin:0;</span><br><span class="line">    height:100%;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">&#125;</span><br><span class="line">body&#123;</span><br><span class="line">    color:white;</span><br><span class="line">&#125;</span><br><span class="line">.top&#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    top:0;</span><br><span class="line">    left:0;</span><br><span class="line">    right:0;</span><br><span class="line">    height:100px;</span><br><span class="line">    background:blue;</span><br><span class="line">&#125;</span><br><span class="line">.left&#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    left:0;</span><br><span class="line">    top:100px;</span><br><span class="line">    bottom:50px;</span><br><span class="line">    width:200px;</span><br><span class="line">    background:red;</span><br><span class="line">&#125;</span><br><span class="line">.right&#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    left:200px;</span><br><span class="line">    top:100px;</span><br><span class="line">    bottom:50px;</span><br><span class="line">    right:0;</span><br><span class="line">    background:pink;</span><br><span class="line">    overflow: auto;</span><br><span class="line">&#125;</span><br><span class="line">.right .inner&#123;</span><br><span class="line">    min-height: 1000px;</span><br><span class="line">&#125;</span><br><span class="line">.bottom&#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    left:0;</span><br><span class="line">    right:0;</span><br><span class="line">    bottom:0;</span><br><span class="line">    height:50px;</span><br><span class="line">    background: black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>兼容性好，ie6下不支持</p>
+<h4 id="flex-4"><a href="#flex-4" class="headerlink" title="flex"></a>flex</h4><p>利用flex-direction属性以达到全屏布局<br>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;top&quot;&gt;top&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;middle&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;inner&quot;&gt;right&lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;bottom&quot;&gt;bottom&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">html,body,.outer&#123;</span><br><span class="line">    margin:0;</span><br><span class="line">    height:100%;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">&#125;</span><br><span class="line">body&#123;</span><br><span class="line">    color: white;</span><br><span class="line">&#125;</span><br><span class="line">.outer&#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-direction: column;</span><br><span class="line">&#125;</span><br><span class="line">.top&#123;</span><br><span class="line">    height:100px;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br><span class="line">.bottom&#123;</span><br><span class="line">    height:50px;</span><br><span class="line">    background: black;</span><br><span class="line">&#125;</span><br><span class="line">.middle&#123;</span><br><span class="line">    flex:1;</span><br><span class="line">    display:flex;</span><br><span class="line">&#125;</span><br><span class="line">.left&#123;</span><br><span class="line">    width:200px;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.right&#123;</span><br><span class="line">    flex: 1;</span><br><span class="line">    overflow: auto;</span><br><span class="line">    background:pink;</span><br><span class="line">&#125;</span><br><span class="line">.right .inner&#123;</span><br><span class="line">    min-height: 1000px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>兼容性差，ie9及ie9以下不兼容</p>
+<h3 id="全部自适应布局"><a href="#全部自适应布局" class="headerlink" title="全部自适应布局"></a>全部自适应布局</h3><h4 id="flex-5"><a href="#flex-5" class="headerlink" title="flex"></a>flex</h4><p>HTML:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;top&quot;&gt;top&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;middle&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;right&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;inner&quot;&gt;right&lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;bottom&quot;&gt;bottom&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">html,body,.outer&#123;</span><br><span class="line">    margin:0;</span><br><span class="line">    height:100%;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">&#125;</span><br><span class="line">body&#123;</span><br><span class="line">    color:white;</span><br><span class="line">&#125;</span><br><span class="line">.outer&#123;</span><br><span class="line">    display:flex;</span><br><span class="line">    flex-direction:column;</span><br><span class="line">&#125;</span><br><span class="line">.top&#123;</span><br><span class="line">    background:blue;</span><br><span class="line">&#125;</span><br><span class="line">.bottom&#123;</span><br><span class="line">    background:black;</span><br><span class="line">&#125;</span><br><span class="line">.middle&#123;</span><br><span class="line">    flex:1;</span><br><span class="line">    display:flex;</span><br><span class="line">&#125;</span><br><span class="line">.left&#123;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.right&#123;</span><br><span class="line">    flex:1;</span><br><span class="line">    overflow:auto;</span><br><span class="line">    background: pink;</span><br><span class="line">&#125;</span><br><span class="line">.right .inner&#123;</span><br><span class="line">    min-height:1000px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2019/03/15/JS深度优先搜索/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/03/13/Javascript中遍历数组的四种方法/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(http://poadan2tz.bkt.clouddn.com/64019196_p0.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="http://poadan2tz.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720190313120828.jpg" alt="S1eePinG's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        1250932494@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2019/03/">三月 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/S1eePinGzZ" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/8923271" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;太阳の倾いたこの世界で
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        <script src="/node_modules/live2d-widgetlib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"node_modules/live2d-widget","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/node_modules/live2d-widgetassets/shizuku.model.json"},"mobile":{"show":false,"scale":0.5},"display":{"superSample":2,"width":130,"height":260,"position":"right","hOffset":0,"vOffset":-20},"react":{"opacityDefault":0.9,"opacityOnHover":0.9}});</script></body>
+    
 </html>
