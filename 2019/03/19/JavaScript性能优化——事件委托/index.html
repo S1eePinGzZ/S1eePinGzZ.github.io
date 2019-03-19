@@ -237,7 +237,7 @@
 
     
         <meta property="article:published_time" content="Tue Mar 19 2019 12:39:22 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 19 2019 17:56:30 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 19 2019 19:12:57 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -260,7 +260,7 @@
     "mainEntityOfPage": "http://yoursite.com/2019/03/19/JavaScript性能优化——事件委托/index.html",
     "headline": "JavaScript性能优化——事件委托",
     "datePublished": "Tue Mar 19 2019 12:39:22 GMT+0800",
-    "dateModified": "Tue Mar 19 2019 17:56:30 GMT+0800",
+    "dateModified": "Tue Mar 19 2019 19:12:57 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "S1eePinG",
@@ -344,7 +344,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#看个例子"><span class="post-toc-number">1.</span> <span class="post-toc-text">看个例子</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用事件委托"><span class="post-toc-number">2.</span> <span class="post-toc-text">使用事件委托</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JavaScript性能优化——事件委托代理"><span class="post-toc-number">1.</span> <span class="post-toc-text">JavaScript性能优化——事件委托代理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#看个例子"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">看个例子</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用事件委托"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">使用事件委托</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -479,8 +479,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>#JavaScript性能优化——事件委托代理</p>
-<h2 id="看个例子"><a href="#看个例子" class="headerlink" title="看个例子"></a>看个例子</h2><p>之前在做4399的笔试题时看到了一道题：<br>创建1000个&lt;li>，点击每个&lt;li>时console.log所点击&lt;li>的内容。</p>
+        <h1 id="JavaScript性能优化——事件委托代理"><a href="#JavaScript性能优化——事件委托代理" class="headerlink" title="JavaScript性能优化——事件委托代理"></a>JavaScript性能优化——事件委托代理</h1><h2 id="看个例子"><a href="#看个例子" class="headerlink" title="看个例子"></a>看个例子</h2><p>之前在做4399的笔试题时看到了一道题：<br>创建1000个&lt;li>，点击每个&lt;li>时console.log所点击&lt;li>的内容。</p>
 <p>如果用函数创建1000个事件监听器，将每个事件监听器绑定到DOM上，很简单就能实现这个功能，但是这样的效率就太过低下了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let Oli = document.getElementsByTagName(&apos;li&apos;);</span><br><span class="line"></span><br><span class="line">for(let i of Oli)&#123;</span><br><span class="line">  i.addEventListener(&apos;click&apos;,function()&#123;</span><br><span class="line">    console.log(i.innerHTML)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这样就很容易的解决了题目，但是效率太过低下，如果是10个&lt;li>还好，1000个&lt;li>效率就太低了</p>
